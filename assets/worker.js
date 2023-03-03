@@ -1,6 +1,6 @@
 var workerResponse = [];
 
-function showPopup() {
+function calculateSum() {
   workerResponse = 'Hello! I am processing in background and not using the main thread.'; 
   postMessage(workerResponse);
 
@@ -18,5 +18,4 @@ function showPopup() {
     postMessage(workerResponse)
   }
 }
-
-showPopup();
+calculateSum();
