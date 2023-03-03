@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Web Worker Demo</title>
+  </head>
+  <body>
+    <p>Not from web worker : <output id="appResult"></output></p>
+    <button onclick="mainThreadProcess()">Start</button>
+
+
+    <p>From web worker : <output id="workerResult"></output></p>
+    <button onclick="startWorker()">Start Worker</button>
+    <button onclick="stopWorker()">Stop Worker</button>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/rxjs/4.1.0/rx.min.js"></script>
+  <script  src="./assets/scripts.js" ></script>
+</html>
